@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo's Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Hugo's Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <div class="gameboard">
+            <div class="gameboard-grid"></div>
+            <div class="game-status"></div>
+            <div class="smallGameBtn">
+                <button class="startBtn">Start</button>
+                <button class="nextBtn">Next Level</button>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <h2>Scoreboard</h2>
+            <div class="game-level-display">Levels Remaining <span class="game-level">9</span></div>
+            <div class="score">
+                <p class="score-display">Player A's Score <span id="scoreA">0</span></p>
+                <p class="score-display">Computer's Score <span id="scoreB">0</span></p>
+            </div>
+            <div class="scoreboard-status">Ultimate Winner <span class="finalWinner">Take a guess 🐶 </span></div>
+            <button class="restartBtn">Restart</button>
+        </div>
+    </main>
+    <audio id='audio' src="./faster.wav"></audio>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(45, 44, 44);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.gameboard {
+    flex: 6;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameboard-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(3, 120px);
+    gap: 20px;
+    background-color: #FCCB06;
+    max-width: 400px;
+    /* use the gap as grid and max width = (120px * 3) + (20px * 2) */
+}
+
+.cell {
+    background-color: rgb(45, 44, 44);
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.game-status {
+    /* background-color: #B1DDF1; */
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(81, 80, 80); */
+    color: white;
+    max-width: 320px;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.smallGameBtn {
+    margin-top: 20px;
+}
+
+.startBtn {
+    width: 200px;
+    height: 50px;
+    background-color: #008080;
+    margin-right: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.nextBtn {
+    width: 200px;
+    height: 50px;
+    background-color: #008080;
+    margin-left: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.restartBtn {
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+    background-color: #008080;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #adadad;
+    color: white;
+    cursor: none;
+}
+
+.scoreboard {
+    flex: 3;
+    background-color: #7D98A1;
+    margin-right: 150px;
+    max-width: 400px;
+    max-height: 580px;
+    padding: 5px 20px 10px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 120px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+span {
+    background-color: #0047AB;
+    display: block;
+    padding: 10px 0 10px 0;
+    width: 300px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    border: 4px solid #DADFF78e;
+}
