@@ -192,7 +192,7 @@ span {
 @media only screen and (max-width: 430px) {
 
     header {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .gameboard-grid {
@@ -219,23 +219,9 @@ span {
         font-weight: bolder;
     }
 
-    .smallGameBtn {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-    }
-
-
     .startBtn {
-        width: 200px;
-        height: 50px;
-        background-color: #008080;
-        margin-right: 15px;
-        border-radius: 10px;
-        color: white;
-        cursor: pointer;
+        margin-top: 0;
+        font-size: 25px;
     }
 
     .nextBtn {

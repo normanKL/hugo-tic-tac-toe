@@ -49,7 +49,7 @@ function init() {
             const cell = document.createElement('div')
             cell.classList.add('cell')
             cell.setAttribute('data-index', i)
-            cell.addEventListener('click',playAudio)
+            cell.addEventListener('click', playAudio)
             cell.addEventListener('click', handleCellClick)
             gameArray.push(cell)
             gridEl.appendChild(cell)
@@ -62,9 +62,10 @@ function init() {
     function playAudio(e) {
         console.log(e.target.textContent)
 
-        if (e.target.textContent === '' && running === true){
+        if (e.target.textContent === '' && running === true) {
             audio.src = './faster.wav'
-            audio.play()}
+            audio.play()
+        }
     }
 
 
